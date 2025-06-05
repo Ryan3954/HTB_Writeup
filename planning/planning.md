@@ -1,4 +1,4 @@
-# 🖥️ HTB Machine: Planning
+# 🐼 HTB Machine: Planning
 ![Screenshot](https://imgur.com/lg7Z2IM.png)
 ### 🧾 Machine Information
 - **IP:** 10.10.11.68  
@@ -47,14 +47,17 @@
 - I used these credentials to try logging in via SSH: `ssh enzo@10.10.11.68`
 ![Screenshot](https://imgur.com/DVj1Y6R.png)
 - With this access, I can search for the user flag.
-![Screenshot](https://imgur.com/AA4YMR8.png)
+
+  ![Screenshot](https://imgur.com/AA4YMR8.png)
 
 ### ⚙️ Privilege Escalation
 - To escalate privileges, I uploaded and ran `linpeas.sh` again, this time on the host system.
-![Screenshot](https://imgur.com/hSkEzxi.png)
+  ![Screenshot](https://imgur.com/hSkEzxi.png)
 - It revealed an interesting file: `/tmp/bash` (owned by `root`)
 - I ran it with: `/tmp/bash -p`
-![Screenshot](https://imgur.com/m3Kbv6G.png)
+
+  ![Screenshot](https://imgur.com/m3Kbv6G.png)
 - And got a root shell. From there, I was able to access the root flag and submit it.
-![Screenshot](https://imgur.com/Y5cF3pS.png)
+
+  ![Screenshot](https://imgur.com/Y5cF3pS.png)
 
