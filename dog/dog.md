@@ -36,9 +36,11 @@
 ![Screenshot](https://imgur.com/50sfPPU.png)
 - Before uploading the malicious module, I modified the module info (the file with the .info extension) for easy identification. 
 - Before:
-![Screenshot](https://imgur.com/XSbZoYD.png)
+
+  ![Screenshot](https://imgur.com/XSbZoYD.png)
 - After:
-![Screenshot](https://imgur.com/oZEDlWu,png)
+
+  ![Screenshot](https://imgur.com/oZEDlWu,png)
 - I then manually uploaded it at: `http://dog.htb/?q=admin/installer/manual`
 ![Screenshot](https://imgur.com/5yAEwk2.png)
 **Note:** I converted the zip file to .tar.gz, as .zip uploads were blocked.
