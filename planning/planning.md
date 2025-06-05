@@ -48,7 +48,7 @@
 ![Screenshot](https://imgur.com/DVj1Y6R.png)
 - With this access, I can search for the user flag.
 
-![Screenshot](https://imgur.com/AA4YMR8.png)
+  ![Screenshot](https://imgur.com/AA4YMR8.png)
 
 ### ⚙️ Privilege Escalation
 - To escalate privileges, I uploaded and ran `linpeas.sh` again, this time on the host system.
