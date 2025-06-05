@@ -47,6 +47,7 @@
 - I used these credentials to try logging in via SSH: `ssh enzo@10.10.11.68`
 ![Screenshot](https://imgur.com/DVj1Y6R.png)
 - With this access, I can search for the user flag.
+
 ![Screenshot](https://imgur.com/AA4YMR8.png)
 
 ### ⚙️ Privilege Escalation
