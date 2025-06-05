@@ -31,7 +31,8 @@
 ![Screenshot](https://imgur.com/Op8pk9J.png)
 - Before running the payload on the website, I need to use the command: `nc -lvnp 5555 > code_database.db`
 - After getting the file, I opened `code_database.db` with `sqlite3`
-![Screenshot](https://imgur.com/px65BXU.png)
+
+    ![Screenshot](https://imgur.com/px65BXU.png)
 - Inside the database, I found credentials for a user named martin. The password was hashed, so I used hashes.com to crack it.
 ![Screenshot](https://imgur.com/8JDFRcQ.png)
 
@@ -52,11 +53,13 @@
 - Attempting to archive /root directly failed. So, I tried using traversal bypass.
 ![Screeshot](https://imgur.com/bRpLYWB.png)
 - But it doesn't works
-![Screenshot](https://imgur.com/IaGQf6I.png)
+
+    ![Screenshot](https://imgur.com/IaGQf6I.png)
 - Targeted Directory became /home/martin/root, because the script sanitize `../` by replacing it with `""`
 ![Screenshot](https://imgur.com/d1IC0Jz.png)
 - So I used another payload:
-![Screenshot](https://imgur.com/rNw3KCx.png)
+
+    ![Screenshot](https://imgur.com/rNw3KCx.png)
 - It Works!
 - After archiving the `root` directory, I sent it to my local machine
 - With that, I opened the archive and extract the `root flag`
