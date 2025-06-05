@@ -1,4 +1,4 @@
-# 🖥️ HTB Machine: Planning
+# 🐼 HTB Machine: Planning
 ![Screenshot](https://imgur.com/lg7Z2IM.png)
 ### 🧾 Machine Information
 - **IP:** 10.10.11.68  
