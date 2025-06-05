@@ -52,12 +52,12 @@
 
 ### ⚙️ Privilege Escalation
 - To escalate privileges, I uploaded and ran `linpeas.sh` again, this time on the host system.
-![Screenshot](https://imgur.com/hSkEzxi.png)
+  ![Screenshot](https://imgur.com/hSkEzxi.png)
 - It revealed an interesting file: `/tmp/bash` (owned by `root`)
 - I ran it with: `/tmp/bash -p`
 
-![Screenshot](https://imgur.com/m3Kbv6G.png)
+  ![Screenshot](https://imgur.com/m3Kbv6G.png)
 - And got a root shell. From there, I was able to access the root flag and submit it.
 
-![Screenshot](https://imgur.com/Y5cF3pS.png)
+  ![Screenshot](https://imgur.com/Y5cF3pS.png)
 
