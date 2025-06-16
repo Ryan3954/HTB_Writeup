@@ -48,13 +48,13 @@
 - While searching trough files, I got some interesting files, its in `/var/lib/neo4j`
 - There is some kind of password in the `.bash_history` file
 
- ![Screenshot](https://imgur.com/fSrevG6.png)
+  ![Screenshot](https://imgur.com/fSrevG6.png)
 - So I tried to login to graphism user using this password
 ![Screenshot](https://imgur.com/M4e3uVK.png)
 - And it works
 - So with graphasm user I can get the user flag
 
- ![Screenshot](https://imgur.com/fY8t4qa.png)
+  ![Screenshot](https://imgur.com/fY8t4qa.png)
 
 ### 🔹 Privilege Escalation (root)
 - Running `sudo -l` as graphasm shows we can execute bbot as root.
@@ -66,7 +66,7 @@
 - This allows me to use my custom modules also, based on this information I assume that I can create my custom preset that load my custom modules directory then I can run my malicious module to escalate my privilege as root
 - To exploit this, There is a preset that is already provided in the `/home/graphasm` directory, I will modify it by adding the malicious module directory
 
- ![Screenshot](https://imgur.com/A0NUdKN.png)
+  ![Screenshot](https://imgur.com/A0NUdKN.png)
 - Now I will start making the malicious module, I will use the existing module as a reference, the existing module located in `/opt/pipx/venvs/bbot/lib/python3.12/site-packages/bbot/modules`
 - I will use `bevigil.py` as reference
 ![Screenshot](https://imgur.com/gPCmnuK.png)
@@ -76,7 +76,7 @@
 ![Screenshot](https://imgur.com/8xoLnVg.png)
 - Then the nc will be root shell
 
- ![Screenshot](https://imgur.com/bDmX88C.png)
+  ![Screenshot](https://imgur.com/bDmX88C.png)
 - With this I can get the root flag
 
- ![Screennshot](https://imgur.com/evWKZoZ.png)
+  ![Screennshot](https://imgur.com/evWKZoZ.png)
