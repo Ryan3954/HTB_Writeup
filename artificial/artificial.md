@@ -31,7 +31,8 @@
 ![Screenshot](https://imgur.com/Qj3Jbgg.png)
 ![Screenshot](https://imgur.com/e4uiESl.png)
 - From there, I grabbed the user flag in /home/gael/user.txt.
-![Screenshot](https://imgur.com/RwaBl25.png)
+
+  ![Screenshot](https://imgur.com/RwaBl25.png)
 ### 🧱 Privilege Escalation
 - I started by checking `sudo -l` for privilege escalation, but the user couldn't run sudo.
 - However, running `ss -tuln` showed a local service running on port 9898.
@@ -58,7 +59,9 @@
 ![Screenshot](https://imgur.com/AzGCHJT.png)
 - After submitting the repository, I went back to my terminal and started a Netcat listener on port 4444.
 - I went back to the Backrest interface, opened the repository I had just created, and used the “Check Now” feature to see if the script executed.
-![Screenshot](https://imgur.com/VsXKHW6.png)
+
+  ![Screenshot](https://imgur.com/VsXKHW6.png)
 - And it worked — I got a shell as root!
 - With root access, I grabbed the root flag from /root/root.txt.
-![Screenshot](https://imgur.com/CqXLLXO.png)
+
+  ![Screenshot](https://imgur.com/CqXLLXO.png)
