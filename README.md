@@ -5,3 +5,4 @@ Completed Active Machines:
 3. Code (Easy)
 4. Cypher (Medium)
 5. Artificial (Easy)
+6. Imagery (Medium)
